@@ -30,3 +30,5 @@ RUN export NVM_DIR="$HOME/.nvm" && \
 
 COPY ./twscripts .
 COPY my.bash_aliases .bash_aliases
+
+CMD /bin/bash
