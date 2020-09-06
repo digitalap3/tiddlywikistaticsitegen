@@ -28,7 +28,7 @@ RUN export NVM_DIR="$HOME/.nvm" && \
     npm install -g tiddlywiki && \
     npm install -g httpserver
 
-COPY ./twscripts .
+COPY ./twassets .
 COPY my.bash_aliases .bash_aliases
 
 CMD /bin/bash
