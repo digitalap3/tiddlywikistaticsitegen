@@ -1,0 +1,8 @@
+created: 20200902010738317
+modified: 20200902011333239
+page-type: structure
+tags: 
+title: static.css
+type: text/vnd.tiddlywiki
+
+{{$:/blog/styles/static-styles.css||$:/core/templates/plain-text-tiddler}}

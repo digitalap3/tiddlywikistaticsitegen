@@ -1,0 +1,12 @@
+created: 20200831094347821
+creator: digitalap3
+modified: 20200903120440659
+modifier: digitalap3
+tags: 
+title: drafts
+type: text/vnd.tiddlywiki
+
+!!!Drafts
+
+<$list filter="[!sort[modified]tag[draft]!tag[posted]]" />
+

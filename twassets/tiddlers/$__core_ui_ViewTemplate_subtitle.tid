@@ -1,0 +1,15 @@
+created: 20200901030848934
+creator: digitalap3
+modified: 20200905141546639
+modifier: digitalap3
+tags: $:/tags/ViewTemplate
+title: $:/core/ui/ViewTemplate/subtitle
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+<$reveal type="nomatch" stateTitle=<<folded-state>> text="hide" tag="div" retain="yes" animate="yes">
+<div class="tc-subtitle">
+<$link to={{!!modifier}} />
+<$view field="modified" format="date" template={{$:/language/Tiddler/DateFormat}}/>
+</div>
+</$reveal>

@@ -1,0 +1,20 @@
+created: 20200903115850405
+creator: digitalap3
+modified: 20200904093749932
+modifier: digitalap3
+tags: 
+title: ListOfPinnedPosts
+type: text/vnd.tiddlywiki
+
+<$list filter="[!sort[publish-date]page-type[post]publish[yes]pinned[yes]]">
+  <div class="post-preview">
+    <h2>
+      <$link class="post-title">
+        <$view field="post-title" /><br/>
+      </$link>
+    </h2>
+    <blockquote class="tc-quote blockquote" style="margin-left:20px">
+      <$transclude field="lead"/>
+    </blockquote>
+  </div>
+</$list>

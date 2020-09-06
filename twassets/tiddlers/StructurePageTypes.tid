@@ -1,0 +1,12 @@
+created: 20200901014904061
+creator: digitalap3
+modified: 20200903060314531
+modifier: digitalap3
+page-type: notes
+tags: 
+title: StructurePageTypes
+type: text/vnd.tiddlywiki
+
+!!Structural Pages
+
+<$list filter="[page-type[structure]!sort[modified]]" />

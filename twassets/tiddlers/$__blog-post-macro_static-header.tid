@@ -1,0 +1,32 @@
+created: 20200903055039997
+creator: digitalap3
+modified: 20200903055812898
+modifier: digitalap3
+page-type: structure
+tags: 
+title: $:/blog-post-macro/static-header
+type: text/vnd.tiddlywiki
+
+\define header(bgpic)
+
+<!-- Page Header -->
+  <header class="masthead" style="background-image: url('./images/core/$bgpic$')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>{{!!post-title}}</h1>
+            <h2 class="subheading">Posted in <$link to={{!!category}}><$view field="category" /></$link></h2>
+            <span class="meta">by
+              {{!!creator}}
+              on <$view field="publish-date" format="date" template="DDD DDth MMM YYYY"/></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+\end
+
+<$macrocall $name="header" bgpic={{!!bgpic}} />

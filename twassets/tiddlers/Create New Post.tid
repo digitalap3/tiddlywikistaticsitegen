@@ -1,0 +1,112 @@
+created: 20200902034833706
+creator: digitalap3
+modified: 20200905150751098
+modifier: digitalap3
+page-type: template
+tags: 
+title: Create New Post
+type: text/vnd.tiddlywiki
+
+This template will create the final tiddler to be rendered at build time.  It is created based on a draft tiddler that has already been created with the title of the post and the tag `draft`.  The created tiddler to be rendered will have the name of the post URI, ie the web address of the post.
+
+//only two hyphens and three words?? this problem seems to have gone away but keep this here in case it comes back//
+
+Post URI (using-hyphens): <$edit-text tiddler="$:/state/new-post-uri" tag="input" default=""/>
+
+<$button>
+<$action-createtiddler $basetitle={{$:/state/new-post-uri}} text="{{||PostTemplate}}"/>
+Create Post
+</$button>
+
+The title of the post will remain the same as the draft.  Choose it from the drop down.
+
+Post Draft Title:<$select tiddler='$:/state/post-title' tooltip='Choose a Draft'>
+<$list filter='[tag[draft]!tag[posted]sort[title]]'>
+<option><$view field='title'/></option>
+</$list>
+</$select>
+
+<$button>
+<$action-setfield $tiddler={{$:/state/new-post-uri}} post-title={{$:/state/post-title}} page-type="post" bgpic="default-post.jpg" />
+<$action-setfield $tiddler={{$:/state/post-title}} tags="draft posted" />
+<$action-setfield $tiddler="$:/state/post-title" text="  You should see new tiddler with URI title in Recent tab" />
+Set Post
+</$button>
+
+---
+
+The publish date is of the format YYYMMDDHHMM.  A time needs to be added or it defaults to midnight and the previous date.
+
+Publish Date (ex. 202001021900): <$edit-text tiddler="$:/state/publish-date" tag="input" default=""/>
+
+<$button>
+<$action-setfield $tiddler={{$:/state/new-post-uri}} publish-date={{$:/state/publish-date}} />
+<$action-setfield $tiddler="$:/state/publish-date" text="" />
+Set Publish Date
+</$button>
+
+You can have this remain a draft for further styling by choosing no or leaving blank.
+
+Publish (yes or no): <$edit-text tiddler="$:/state/publish" tag="input" default=""/>
+
+<$button>
+<$action-setfield $tiddler={{$:/state/new-post-uri}} publish={{$:/state/publish}} />
+<$action-setfield $tiddler="$:/state/publish" text="" />
+Set Publish
+</$button>
+
+Category (only one) : <$select tiddler='$:/state/category' tooltip='Choose a Category'>
+<option>Testing</option>
+<option>Tech</option>
+<option>Healthcare</option>
+<option>How-to</option>
+<option>Politics-Culture</option>
+<option>~NullCategory</option>
+<option>~FediPost</option>
+<option>Mind</option>
+<option>Body</option>
+<option>Family</option>
+</$select>
+
+<$button>
+<$action-setfield $tiddler={{$:/state/new-post-uri}} category={{$:/state/category}} />
+<$action-setfield $tiddler="$:/state/category" text="" />
+Set Category
+</$button>
+
+Header Bg Pic (Leave empty for default) : <$edit-text tiddler="$:/state/bgpic" tag="input" default=""/>
+
+<$button>
+<$action-setfield $tiddler={{$:/state/new-post-uri}} bgpic={{$:/state/bgpic}} />
+<$action-setfield $tiddler="$:/state/bgpic" text="" />
+Set Header Pic
+</$button>
+
+Lead (copy/paste from draft - MUST BE TW MARKUP) : <$edit-text tiddler="$:/state/lead" tag="textarea"  default=""/>
+
+<$button>
+<$action-setfield $tiddler={{$:/state/new-post-uri}} lead={{$:/state/lead}} />
+<$action-setfield $tiddler="$:/state/lead" text="" />
+Set Lead
+</$button>
+
+Pinned (yes / no or empty) : <$edit-text tiddler="$:/state/pinned" tag="input"  default=""/>
+
+<$button>
+<$action-setfield $tiddler={{$:/state/new-post-uri}} pinned={{$:/state/pinned}} />
+<$action-setfield $tiddler="$:/state/pinned" text="" />
+Set Pinned
+</$button>
+
+All Tags In Use: <$list filter="[all[]tags[]!is[system]sort[title]]" template="$:/core/ui/TagTemplate"/>
+
+Set Tags (Choose from list above or add new - space separated - this will completely replace all existing tags):
+<br/> <$edit-text tiddler="$:/state/post-tags" tag="input" default=""/>
+
+<$button>
+<$action-setfield $tiddler={{$:/state/new-post-uri}} tags={{$:/state/post-tags}} />
+<$action-setfield $tiddler="$:/state/post-tags" text="" />
+Set Tags
+</$button>
+
+Go to <$link to={{$:/state/new-post-uri}}/>
