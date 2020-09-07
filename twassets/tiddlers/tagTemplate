@@ -1,0 +1,33 @@
+
+created: 20200907122655062
+creator: digitalap3
+modified: 20200907123110111
+modifier: digitalap3
+page-type: template
+tags: tag
+title: tagTemplate
+type: text/vnd.tiddlywiki
+
+<$transclude tiddler="$:/blog/nav-bar" />
+
+<$transclude tiddler="$:/blog-index/static-header"/>
+
+ <article>
+   <div class="container">
+     <div class="row">
+       <div class="col-lg-8 col-md-10 mx-auto">
+         <h2>Posts tagged with {{!!title}}</h2>
+
+           <$list filter="[tag{!!title}]" >
+             <$link>
+               <$view field="title" /><br/>
+             </$link>
+           </$list>
+
+
+       </div>
+     </div>
+  </div>
+</article>
+
+<$transclude tiddler="$:/blog/static-footer"/>
