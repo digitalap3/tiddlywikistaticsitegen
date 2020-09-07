@@ -1,0 +1,22 @@
+
+version: '3'
+
+services:
+  tiddlyserver:
+    image: twstatic #image created with Dockerfile
+    container_name: tiddlyserver
+    volumes:
+      - "/path/to/docker/data/tiddlywikis:/home/nodeuser/tiddlywikis" #working dir for tiddlyserver
+      - "/path/to/docker/data/nginx/html:/srv/nginx/html" #shared with production webserver
+    ports:
+      - "8080:8080" #for the tw server
+      - "8081:8081" #for the httpserver
+        
+    tty: true
+
+    networks:
+      - mynetwork
+    
+networks:
+  mynetwork:
+    external: true
