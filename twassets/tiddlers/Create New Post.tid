@@ -74,7 +74,7 @@ Category (only one) : <$select tiddler='$:/state/category' tooltip='Choose a Cat
 Set Category
 </$button>
 
-Header Bg Pic (Leave empty for default) : <$edit-text tiddler="$:/state/bgpic" tag="input" default=""/>
+Header Bg Pic (Leave empty for default; 6:4 size) : <$edit-text tiddler="$:/state/bgpic" tag="input" default=""/>
 
 <$button>
 <$action-setfield $tiddler={{$:/state/new-post-uri}} bgpic={{$:/state/bgpic}} />
