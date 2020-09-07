@@ -16,12 +16,11 @@ type: text/vnd.tiddlywiki
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
- 
+        <h3>Pinned Posts</h3>
         {{ListOfPinnedPosts}}
 
+        <h3>Recent Posts</h3>
         {{ListofRecentPosts}}
-
-       <span>Header photo by <a href="https://unsplash.com/@cant89?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Davide Cantelli</a> on <a href="https://unsplash.com/s/photos/spirit?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
       </div>
     </div>
