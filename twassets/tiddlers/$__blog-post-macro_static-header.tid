@@ -10,7 +10,7 @@ type: text/vnd.tiddlywiki
 \define header(bgpic)
 
 <!-- Page Header -->
-  <header class="masthead" style="background-image: url('./images/core/$bgpic$')">
+  <header class="masthead" style="background-image: url('./images/headers/$bgpic$')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
