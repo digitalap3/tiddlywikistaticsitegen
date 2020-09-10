@@ -1,0 +1,17 @@
+bgpic: default-post.jpg
+category: Testing
+created: 20200910122506573
+creator: username
+lead: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer quis auctor elit sed vulputate mi sit amet. Malesuada nunc vel risus commodo. Elementum facilisis leo vel fringilla.
+modified: 20200910122654699
+modifier: username
+page-type: post
+pinned: yes
+post-title: A Title
+publish: yes
+publish-date: 202009061900
+tags: testing lorem-ipsum
+title: a-generic-title-with-hyphens
+type: text/vnd.tiddlywiki
+
+{{||PostTemplate}}

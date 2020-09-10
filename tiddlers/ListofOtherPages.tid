@@ -1,0 +1,10 @@
+created: 20200902011617301
+modified: 20200902011641159
+tags: 
+title: ListofOtherPages
+type: text/vnd.tiddlywiki
+
+!!List of Other Pages
+(to be broken down into further subcategories)
+
+<$list filter="[!is[system]sort[modified]limit[50]!page-type[post]!page-type[index]!page-type[structure]]" />

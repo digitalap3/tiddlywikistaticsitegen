@@ -1,0 +1,15 @@
+bgpic: default-post.jpg
+category: Testing
+created: 20200910122819768
+creator: username
+modified: 20200910122927579
+modifier: username
+page-type: post
+post-title: de Finibus Bonorum et Malorum
+publish: yes
+publish-date: 202009101900
+tags: testing lorem-ipsum
+title: de-finibus-bonorum-et-malorum
+type: text/vnd.tiddlywiki
+
+{{||PostTemplate}}

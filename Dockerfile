@@ -2,7 +2,7 @@ From debian:buster-slim
 
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive \
     apt-get -y --no-install-recommends install \
-    vim curl locales less procps ca-certificates
+    vim curl locales less procps ca-certificates rsync
    
 ## CHANGE PASSWORD
 RUN useradd -m -s /bin/bash nodeuser && \

@@ -1,0 +1,15 @@
+created: 20200901030836365
+modified: 20200902012552934
+tags: $:/tags/ViewTemplate $:/tags/StaticViewTemplate $:/tags/IndexStaticViewTemplate $:/tags/PostStaticViewTemplate
+title: $:/core/ui/ViewTemplate/plugin
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]has[plugin-type]] -[all[current]field:plugin-type[import]]">
+<$set name="plugin-type" value={{!!plugin-type}}>
+<$set name="default-popup-state" value="yes">
+<$set name="qualified-state" value=<<qualify "$:/state/plugin-info">>>
+{{||$:/core/ui/Components/plugin-info}}
+</$set>
+</$set>
+</$set>
+</$list>

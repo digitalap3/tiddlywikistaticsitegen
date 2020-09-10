@@ -1,0 +1,18 @@
+created: 20200904021335303
+creator: digitalap3
+modified: 20200905152019466
+modifier: digitalap3
+page-type: notes
+tags: 
+title: To Do
+type: text/vnd.tiddlywiki
+
+!Things to Work on and Tweak
+* more detailed instructions on use of docker containers and webserver
+** include here as example posts?  one could just remove publish tag to exclude them from build
+
+* credits page
+
+* Index pages - Tiddlers for Categories, notes, and archives
+
+* Footer

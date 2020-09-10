@@ -1,0 +1,29 @@
+created: 20200830025243263
+creator: digitalap3
+modified: 20200905114119910
+modifier: digitalap3
+page-type: index
+publish: yes
+tags: 
+title: index
+type: text/vnd.tiddlywiki
+
+<$transclude tiddler="$:/blog/nav-bar" />
+
+<$transclude tiddler="$:/blog-index/static-header"/>
+
+<!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <h3>Pinned Posts</h3>
+        {{ListOfPinnedPosts}}
+
+        <h3>Recent Posts</h3>
+        {{ListofRecentPosts}}
+
+      </div>
+    </div>
+  </div>
+
+<$transclude tiddler="$:/blog/static-footer"/>

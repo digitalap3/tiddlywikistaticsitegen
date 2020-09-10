@@ -1,0 +1,23 @@
+
+<$transclude tiddler="$:/blog/nav-bar" />
+
+<$transclude tiddler="$:/blog-index/static-header"/>
+
+ <article>
+   <div class="container">
+     <div class="row">
+       <div class="col-lg-8 col-md-10 mx-auto">
+         <h2>Posts with Category {{!!title}}</h2>
+         
+         <$list filter="[category{!!title}]" >
+           <$link>
+             <$view field="title" /><br/>
+           </$link>
+         </$list>
+
+       </div>
+     </div>
+  </div>
+</article>
+
+<$transclude tiddler="$:/blog/static-footer"/>

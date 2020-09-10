@@ -1,0 +1,16 @@
+bgpic: default-post.jpg
+category: Testing
+created: 20200910092618233
+creator: username
+lead: Some free pictures to demo using bootstrap figure tags
+modified: 20200910093054509
+modifier: username
+page-type: post
+post-title: Some Pictures
+publish: yes
+publish-date: 202009011900
+tags: testing
+title: some-pictures
+type: text/vnd.tiddlywiki
+
+{{||PostTemplate}}
