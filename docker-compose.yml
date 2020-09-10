@@ -5,7 +5,7 @@ services:
   tiddlyserver:
     image: twstatic #image created with Dockerfile
     container_name: tiddlyserver
-    volumes:
+    volumes: #NOTE: these will have user:group 101:101 to use with nginx container in production
       - "/path/to/docker/data/tiddlywikis:/home/nodeuser/tiddlywikis" #working dir for tiddlyserver
       - "/path/to/docker/data/nginx/html:/srv/nginx/html" #shared with production webserver
     ports:
