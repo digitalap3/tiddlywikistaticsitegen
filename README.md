@@ -50,6 +50,7 @@ run `/bin/bash httpserver.sh`  check httpserver.out for errors.
 go to yoursite:8081 for results.
 
 Continue to make changes, run build.sh, and refresh yoursite:8081 to check for changes.
+* TIP: for minor css style changes you can go to 'inspect' in chrome or it's equivalent and change the classes and styles like colors, margins, padding, etc to get a temporary look at what they produce then add that to your code.
 
 transferring and running the production version from a webserver like nginx with ssl certs is a post for another day.
 
