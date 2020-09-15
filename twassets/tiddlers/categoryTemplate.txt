@@ -1,3 +1,11 @@
+created: 20200910124533761
+creator: username
+modified: 20200910124728524
+modifier: username
+page-type: template
+title: categoryTemplate
+type: text/vnd.tiddlywiki
+
 
 <$transclude tiddler="$:/blog/nav-bar" />
 
